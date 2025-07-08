@@ -1,0 +1,34 @@
+Feature: orangehm webpage
+  Scenario: orangehm logo presence
+    Given launch chrome browser
+    When  open hrm homepage
+    Then verify that the logo present
+    And close browser
+
+
+@given(u'launch chrome browser')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given launch chrome browser')
+
+
+@when(u'open hrm homepage')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When open hrm homepage')
+
+
+@then(u'verify that the logo present')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then verify that the logo present')
+
+
+@then(u'close browser')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then close browser')
+
+
+
+
+
+Get-Executionpolicy
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
